@@ -49,7 +49,7 @@ async def welcome(_, message: Message):
             return
 
 
-@app.on_message(filters.command(["help", "start", f"start@{BOT_USERNAME}"]) & filters.group)
+@app.on_message(filters.command(["mshelp", "msstart", f"msstart@{BOT_USERNAME}"]) & filters.group)
 @PermissionCheck
 async def gstart(_, message: Message):
     await asyncio.gather(
@@ -77,11 +77,6 @@ async def gstart(_, message: Message):
                 ),
                 InlineKeyboardButton(
                     text="💘 ᴄʜᴀɴɴᴇʟ 💘", url=config.SUPPORT_CHANNEL
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    text="☁ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ☁", url="https://github.com/TEAM-ABG/AsuXMusic"
                 ),
             ],
         ]
