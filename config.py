@@ -7,21 +7,21 @@ get_queue = {}
 
 
 API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("API_HASH", "")
 
 ASS_HANDLER = list(getenv("ASS_HANDLER", ".").split())
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "")
 
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "150"))
-LOGGER_ID = int(getenv("LOGGER_ID"))
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+LOGGER_ID = int(getenv("LOGGER_ID", ""))
+MONGO_DB_URI = getenv("MONGO_DB_URI", "")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))
 
 PING_IMG = getenv("PING_IMG", "https://telegra.ph/file/c5952790fa8235f499749.jpg")
-START_IMG = getenv("START_IMG")
+START_IMG = getenv("START_IMG", "")
 
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/AbishnoiMF ")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", " https://t.me/Abishnoi_bots ")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Best_FriendsFor_Ever ")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", " https://t.me/Star_X_Network ")
 
-STRING_SESSION = getenv("STRING_SESSION", None)
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "1452219013").split()))
+STRING_SESSION = getenv("STRING_SESSION", "")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
