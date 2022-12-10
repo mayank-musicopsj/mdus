@@ -9,10 +9,6 @@ ping_ig = InlineKeyboardMarkup(
                     text="sᴜᴩᴩᴏʀᴛ",
                     url=config.SUPPORT_CHAT,
                 ),
-                InlineKeyboardButton(
-                    text="sᴏᴜʀᴄᴇ",
-                    url="https://github.com/KingAbishnoi/AsuXMusic"
-                )
             ]
         ]
     )
